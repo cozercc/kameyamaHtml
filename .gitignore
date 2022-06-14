@@ -1,0 +1,13 @@
+nbproject/ 
+
+.vscode/ 
+
+*.code-workspace 
+
+.idea/ 
+
+**/css/style.css 
+
+**/css/reset.css 
+
+node_modules/ 
