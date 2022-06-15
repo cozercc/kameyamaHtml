@@ -14,50 +14,65 @@
 
 <body>
     <div id="wrap">
-        <header class="container">
+        <header>
             <div class="container">
                 <h1 class="logo">
-                    <img src="img/header_logo.svg" class="logo-img"></img>
-                    <img src="img/eng.png">
+                    <table class="topHeader">
+                        <tr>
+                            <td><img src="img/header_logo.svg" alt="" class="logo-img"></img>
+                            </td>
+                            <td><img src="img/eng.png" alt="english"></td>
+                        </tr>
+                    </table>
                 </h1>
             </div>
-            <img src="img/mv.jpg" width="1280" height="330">
+            <div>
+                <img src="img/mv.jpg" width="1200" height="330">
+            </div>
         </header>
         <div class="container">
-            <nav id="gnav">
-                <ul>
-                    <li><img src="img/gnav_home.svg" class="logo-img"></img></li>
-                    <li><img src="img/gnav_history.svg" class="logo-img"></img></li>
-                    <li><img src="img/gnav_project.svg" class="logo-img"></img></li>
+            <nav>
+                <ul class="gnavTop">
+                    <li class="home"><a href="#"><img src="img/gnav_home.svg" alt="home"></a></li>
+                    <li class="history"><a href="#"><img src="img/gnav_history.svg" alt="history"></a></li>
+                    <li class="project"><a href="#"><img src="img/gnav_project.svg" alt="project"></a></li>
                 </ul>
             </nav>
         </div>
-        <main class="container">
-            <h2><img src="img/ttl_home.svg" class="main-logo"></img></h2>
-            <p>現在、栽培面積358ha三重県で第3位の緑茶産地である亀山市。 戦後から昭和40年代にかけては、日本有数の紅茶産地であったことをご存知でしょうか。</p>
-            <img src="img/top_img.jpg" width="680" height="241">
-            <p>その当時、亀山で最も多く栽培されていた紅茶品種が「べにほまれ」です。「べにほまれ」は日本初（茶農林1号）の紅茶専用品種で、亀山産の「べにほまれ」紅茶は、『日本産紅茶としてはじめて海外の紅茶に追いついた』と評されるまぼろしの紅茶なのです。
-                昭和30年代には世界レベルの品質を武器に海外へも輸出され、国内の茶品評会では亀山市の川戸勉氏が全23回中11回で最高位（農林水産大臣賞）を受賞するなど、亀山産紅茶は日本紅茶のトップブランドの地位を築きました。
-            </p>
-            <p>しかし、最盛期に茶園面積50ha、生産量97tを誇り、さらなる拡大を目指していた亀山の「べにほまれ」紅茶も、海外産地とのし烈な競争や紅茶の輸入自由化等、時代の流れの中で国内の他産地と同様に衰退していくこととなります。市内の紅茶茶園は続々と緑茶へと改植され、亀山の紅茶生産はほとんど消えてしまったのです。
-            </p>
-            <p>この歴史に埋もれてしまった亀山産のべにほまれ紅茶を復活させようとする取り組みが、平成23年度から三重県中央農業改良普及センター、三重県農業研究所茶業研究室等の協力を得て、市内の茶業関係者によって行われています。
-            </p>
-            <p>『亀山べにほまれ紅茶復活プロジェクト』として発足したこの取り組みでは、40年以上もの長い年月を経ながら奇跡的に残されていたべにほまれ茶園を再生させるとともに、高い紅茶製造の技術も再現し、再び世界に誇る亀山紅茶の復活を目ざしています。
-            </p>
-            <img src="img/background.jpg">
-        </main>
-        <footer class="container">
-            <nav id="gnav">
-                <ul>
-                    <li><img src="img/gnav_home.svg" class="logo-img"></img></li>
-                    <li><img src="img/gnav_history.svg" class="logo-img"></img></li>
-                    <li><img src="img/gnav_project.svg" class="logo-img"></img></li>
-                </ul>
-            </nav>
-            <div class="footer_bottom">
-                <p><small>Copyright (C) Kameyama black tea. All rights reserved.</small></p>
+        <main>
+            <div id="home">
+                <h2><img src="img/ttl_home.svg" alt="home" class="main-logo"></img></h2>
+
+                <div id="mainContents">
+                    <p id="text1">現在、栽培面積358ha三重県で第3位の緑茶産地である亀山市。<br>戦後から昭和40年代にかけては、日本有数の紅茶産地であったことをご存知でしょうか。</p>
+                    <img src="img/top_img.jpg" alt="" width="680" height="241">
+                        <p>
+                            その当時、亀山で最も多く栽培されていた紅茶品種が「べにほまれ」です。「べにほまれ」は日本初（茶農林1号）の紅茶専用品種で、亀山産の「べにほまれ」紅茶は、『日本産紅茶としてはじめて海外の紅茶に追いついた』と評されるまぼろしの紅茶なのです。<br>
+                            昭和30年代には世界レベルの品質を武器に海外へも輸出され、国内の茶品評会では亀山市の川戸勉氏が全23回中11回で最高位（農林水産大臣賞）を受賞するなど、亀山産紅茶は日本紅茶のトップブランドの地位を築きました。
+                        </p>
+                        <p>しかし、最盛期に茶園面積50ha、生産量97tを誇り、さらなる拡大を目指していた亀山の「べにほまれ」紅茶も、海外産地とのし烈な競争や紅茶の輸入自由化等、時代の流れの中で国内の他産地と同様に衰退していくこととなります。市内の紅茶茶園は続々と緑茶へと改植され、亀山の紅茶生産はほとんど消えてしまったのです。
+                        </p>
+                        <p>この歴史に埋もれてしまった亀山産のべにほまれ紅茶を復活させようとする取り組みが、平成23年度から三重県中央農業改良普及センター、三重県農業研究所茶業研究室等の協力を得て、市内の茶業関係者によって行われています。
+                        </p>
+                        <p>『亀山べにほまれ紅茶復活プロジェクト』として発足したこの取り組みでは、40年以上もの長い年月を経ながら奇跡的に残されていたべにほまれ茶園を再生させるとともに、高い紅茶製造の技術も再現し、再び世界に誇る亀山紅茶の復活を目ざしています。
+                        </p>
+                </div>
             </div>
+        </main>
+        <footer>
+            <div class="backgroundCol">
+                <div class="container">
+                    <nav>
+                        <ul class="navFooter">
+                            <li><a href="">HOME</a></li>
+                            <li><a href="#">HISTORY</a></li>
+                            <li><a href="#">PROJECT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <p class="copyright"><small>Copyright (C) Kameyama black tea. All rights reserved</small></p>
+
         </footer>
     </div>
 </body>
