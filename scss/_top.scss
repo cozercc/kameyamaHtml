@@ -4,61 +4,12 @@
 //  トップ専用
 // ---------------------------------------------
 
-.topHeader {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-.container {
-    width: 1200px;
-    margin: auto;
-}
-
 
 //let img on the center of the screen
 img {
   display: block;
   margin: 0 auto;
 }
-
-.gnavTop {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    background-image:url('../img/gnav_on.png');
-
-    li {
-        width: 270px;
-    }
-
-    a {
-        display: block;
-        padding: 13px;
-    }
-}
-
-.backgroundCol {
-    background: linear-gradient(#a51e17, #ac3c3c);
-    margin: auto;
-}
-
-.navFooter {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    margin-left: 60px;
-
-    li {
-        padding: 18px 20px;
-    }
-
-    a {
-        color: #ffffff;
-        text-decoration: none;
-    }
-}
-
-
 
 #mainContents {
     margin-top: 50px;
@@ -93,18 +44,11 @@ p {
     margin-top: 50px;
     padding-bottom: 460px;
     background-image: url(../img/background.jpg);
-    background-size: cover;
+    background-size: auto;
+    background-position: bottom;
     background-repeat: no-repeat;
     width: 1200px;
-    margin: auto;
-
-}
-
-
-.copyright {
+    margin-top: 62px;
     text-align: center;
-    color: #ffffff;
-    padding: 40px 0;
-    font-size: 14px;
 }
 

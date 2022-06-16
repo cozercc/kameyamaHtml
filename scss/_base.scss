@@ -18,12 +18,52 @@ body {
 }
 
 .container {
-    width: 1000px;
-    margin: auto;
+        width: 670px;
+        margin: auto;
 }
 
+
 header {
+    .row {
+        margin-top: 41px;
+        margin-bottom: 42.08px;
+        display: flex;
+      }
     
+      
+    .column {
+        width: 100%;
+      }
+      
+    .columnEng{
+        width:auto
+    }
+}
+
+#topImg{
+    background-color: #000;
+    
+}
+#topList{
+    background-color: #a51e17;
+}
+
+.gnavTop {
+    background: linear-gradient(#A71E18, #B53F3F);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    li{
+        width: 270px;
+    }
+    li:hover {
+        background-image:url('../img/gnav_on.png');
+    }
+
+    a {
+        display: block;
+        padding: 13px;
+    }
 }
 
 main{
@@ -33,4 +73,37 @@ main{
 footer {
     background-color: #000000;
     text-align: center;
+}
+
+.backgroundCol {
+    background: linear-gradient(#a51e17, #ac3c3c);
+    margin: auto;
+}
+
+.navFooter {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-left: -161px;
+
+    li {
+        padding: 17px 24px;
+    }
+
+
+    li:hover {
+        background-image:url('../img/gnav_on.png');
+    }
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
+.copyright {
+    text-align: center;
+    color: #ffffff;
+    padding: 40px 0;
+    font-size: 14px;
 }
