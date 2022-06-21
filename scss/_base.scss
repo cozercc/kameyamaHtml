@@ -4,14 +4,6 @@
 // ---------------------------------------------
 
 
-body {
-    font-family: "Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
-    //font-family: "Hiragino Mincho ProN","Hiragino Mincho Pro",游明朝,"Yu Mincho",YuMincho,serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555;
-}
-
 #wrap {
     min-width: 1200px;
     margin: auto;
@@ -22,6 +14,9 @@ body {
         margin: auto;
 }
 
+.topLogo {
+    text-align: center;
+}
 
 header {
     .row {
@@ -42,7 +37,12 @@ header {
 
 #topImg{
     background-color: #000;
-    
+    text-align: center;
+
+    img{
+        display: block;
+        margin: 0 auto;
+    }
 }
 #topList{
     background-color: #a51e17;
@@ -53,21 +53,34 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
+    
     li{
         width: 270px;
+    }
+    li:first-child{
+        background-image:url('../img/gnav_on.png');
     }
     li:hover {
         background-image:url('../img/gnav_on.png');
     }
 
     a {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 13px;
     }
 }
+h2{
+    text-align: center;
+}
 
-main{
-
+body {
+    font-family: "Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+    //font-family: "Hiragino Mincho ProN","Hiragino Mincho Pro",游明朝,"Yu Mincho",YuMincho,serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
 }
 
 footer {
@@ -92,7 +105,7 @@ footer {
 
 
     li:hover {
-        background-image:url('../img/gnav_on.png');
+        text-decoration: underline;
     }
 
     a {

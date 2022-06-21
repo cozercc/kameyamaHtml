@@ -5,26 +5,9 @@
 // ---------------------------------------------
 
 
-//let img on the center of the screen
-img {
-  display: block;
-  margin: 0 auto;
-}
-
-#mainContents {
-    margin-top: 50px;
-    padding-bottom: 50px;
-    text-align:center;
-    display: block;
-    width: 680px;
-}
-
 p {
     margin-top: 20px;
     font-size: 14px;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: left
 }
 
 #text1 {
@@ -35,20 +18,12 @@ p {
 }
 
 
-#mainContents {
-    width: 680;
-    margin: auto;
-}
-
-#home{
-    margin-top: 50px;
+.home{
     padding-bottom: 460px;
     background-image: url(../img/background.jpg);
     background-size: auto;
     background-position: bottom center;
     background-repeat: no-repeat;
-    width: 1200px;
     margin-top: 62px;
-    text-align: center;
 }
 
