@@ -25,15 +25,16 @@ body {
 }
 
 header {
-    position: relative;
     .row {
+        position: relative;
+
         margin-top: 41px;
         margin-bottom: 42.08px;
       }
       
     .columnEng{
         position: absolute;
-        right: 237px;
+        right: 0px;
     }
 }
 
