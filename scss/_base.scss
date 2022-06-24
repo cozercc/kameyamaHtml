@@ -29,17 +29,10 @@ header {
     .row {
         margin-top: 41px;
         margin-bottom: 42.08px;
-        display: flex;
-      }
-    
-      
-    .column {
-        width: 100%;
       }
       
     .columnEng{
         position: absolute;
-        left: 980px;
         right: 237px;
     }
 }
@@ -66,12 +59,13 @@ header {
     
     li{
         width: 270px;
-    }
-    &:first-child{
-        background-image:url('../img/gnav_on.png');
-    }
-    &:hover {
-        background-image:url('../img/gnav_on.png');
+
+        &:first-child{
+            background-image:url('../img/gnav_on.png');
+        }
+        &:hover {
+            background-image:url('../img/gnav_on.png');
+        }
     }
 
     a {
@@ -103,11 +97,9 @@ footer {
 
     li {
         padding: 17px 24px;
-    }
-
-
     &:hover {
         text-decoration: underline;
+    }
     }
 
     a {
