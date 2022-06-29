@@ -1,4 +1,4 @@
-@charset "UTF-8";
+ @charset "UTF-8";
 // ---------------------------------------------
 //  base
 // ---------------------------------------------
@@ -26,20 +26,21 @@ body {
 }
 
 header {
+    border-bottom: #DF69C3 3px solid;
+    width: 100%;
+    top: 0px;
     display: flex;
+    position: fixed;
+    font-weight: bold;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
     .titleText {
         display: flex;
         flex-wrap: wrap;
     }
 }
 
-.topArea{
-    display: flex;
-    position: fixed;
-    left: 200px;
-    font-weight: bold;
-    background-color: #ffffff;
-}
 
 .topImg{
     text-align: center;
@@ -87,38 +88,73 @@ main {
     margin-top: 75px;
 }
 
-h2{
+
+.mainInfo{
     text-align: left;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .imgBlock1{
     display:flex;
     justify-content: space-between;
+    margin-top: 40px;
 }
 
-.section2Text{
+.imgBlock2 {
+    padding: 60px 0 100px;
+}
+
+// 会社案内ボタン
+.btnInfoBase {
+    display: block;
+    color: #df69c3;
+    border: solid 2px #df69c3;
+    text-align: center;
+    padding: 10px 10px;
+    max-width: 320px;
+    font-weight: bold;
+    border-radius: 10px;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 auto;
+}
+
+//決算報告ボタン
+.btnkessan {
+    display: block;
+    max-width: 800px;
+    background: #fff;
+    color: #df69c3;
+    border: solid 2px #df69c3;
+    text-align: center;
+    padding: 20px 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.2s;
 
 }
 
 footer {
-    background-color: #000000;
-    text-align: center;
+    background-color: #FBE7F7;
+    padding: 40px 10px 5px;
+}
+.footerBase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.backgroundCol {
-    background: linear-gradient(#a51e17, #ac3c3c);
-    margin: auto;
+.footerTitle {
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 10px;
 }
+
 
 .navFooter {
     display: flex;
     align-items: center;
     font-size: 14px;
-    margin-left: -161px;
-
     li {
         padding: 17px 24px;
     &:hover {
@@ -126,15 +162,11 @@ footer {
     }
     }
 
-    a {
-        color: #ffffff;
-        text-decoration: none;
-    }
 }
 
 .copyright {
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     padding: 40px 0;
     font-size: 14px;
 }

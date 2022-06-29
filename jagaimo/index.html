@@ -15,8 +15,6 @@
 <body>
     <div id="wrap">
         <header>
-            <div class="container">
-                <div class="topArea">
                     <h1>
                         <a class="titleText">
                             <img src="img/mark.png" alt="jagaimo">
@@ -33,18 +31,18 @@
                             <li><a href="#">お問い合わせ</a></li>
                         </ul>
                     </nav>
-                </div>
-            </div>
         </header>
         <main>
+            <!-- section1 会社案内 -->
+        <section class="sectionOne">
             <div class="topImg">
-                <hr />
                 <img src="img/mv.jpg" width="1200" height="400">
             </div>
+        </section>
         <div class="container-main">
 
             <div class="home">
-                    <h2>会社案内</h2>
+                    <h2 class="mainInfo">会社案内</h2>
                     <hr/>
             <div class="imgBlock1">
             <div>
@@ -52,29 +50,45 @@
             </div>
             <div>
                 <p>特定営利活動法人 在宅福祉の会じゃがいも の会社概要です。</p>
-                <a>会社概要はコチラ</a>
+                <a class="btnInfoBase">会社概要はコチラ</a>
             </div>
             </div>
         </div>
-            </section>
-            <!-- section2 -->
-            <section>
-                <div>
-                    <h2>決算報告</h2>
+            <!-- section2 決算報告-->
+            <section class="seconeTwo">
+                <div class="imgBlock2">
+                    <h2 class="mainInfo">決算報告</h2>
                     <hr/>
-                    <a class="section2Text">決算報告書を見る</a>
+                    <a class="btnInfoBase btnkessan">決算報告書を見る</a>
                 </div>
 
             </section>
         </div>
         </main>
         <footer>
-            <div class="backgroundCol">
-                <div class="container">
-
+                <div class="footerBase container">
+                    <div class="footerInfo">
+                        <h2 class="footerTitle">特定営利活動法人<br>
+                            在宅福祉の会じゃがいも
+                        </h2>
+                        <address>
+                            〒481-0041 愛知県北名古屋市九之坪白山81<br>
+                            TEL： 0568-23-4008
+                        </address>
+                    </div>
+                    <div class="footerList">
+                        <nav>
+                            <ul class="navFooter">
+                                <li><a href="#" class="firstText">TOP</a></li>
+                                <li><a href="#">会社概要</a></li>
+                                <li><a href="#">決算報告</a></li>
+                                <li><a href="#">採用情報</a></li>
+                                <li><a href="#">お問い合わせ</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-            </div>
-            <p class="copyright"><small>Copyright (C) Kameyama black tea. All rights reserved</small></p>
+            <p class="copyright"><small>© 2020 JAGAIMO, All Right Reserved.</small></p>
 
         </footer>
     </div>
