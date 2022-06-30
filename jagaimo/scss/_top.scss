@@ -5,9 +5,73 @@
 // ---------------------------------------------
 
 
+.top_img {
+    text-align: center;
 
+    img {
+        display: block;
+        margin: 0 auto;
+        top: 0;
+    }
+}
+
+.sub_title {
+    font-size: 1.1rem;
+    display: block;
+}
 
 .home{
     margin-top: 60px;
 }
 
+.main_info {
+    text-align: left;
+    font-weight: bold;
+    font-size: 24px;
+    border-bottom: #fbe7f7 solid 2px;
+    margin-bottom: 40px;
+}
+
+.img_block1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.img_block2 {
+    padding: 60px 0 100px;
+}
+
+// 会社案内
+.inc_info {
+    margin-bottom: 20px;
+}
+
+// 会社案内ボタン
+.btn_infobase {
+    display: block;
+    color: #df69c3;
+    border: solid 2px #df69c3;
+    text-align: center;
+    padding: 10px 10px;
+    max-width: 320px;
+    font-weight: bold;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
+}
+
+//決算報告ボタン
+.btn_kessan {
+    display: block;
+    max-width: 800px;
+    background: #fff;
+    color: #df69c3;
+    border: solid 2px #df69c3;
+    text-align: center;
+    padding: 20px 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.2s;
+
+}
