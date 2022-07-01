@@ -16,7 +16,7 @@
 }
 
 .sub_title {
-    font-size: 1.1rem;
+    font-size: 10px;
     display: block;
 }
 
@@ -27,9 +27,15 @@
 .main_info {
     text-align: left;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 28px;
     border-bottom: #fbe7f7 solid 2px;
     margin-bottom: 40px;
+}
+
+.main_info span {
+    font-size: 10px;
+    font-weight: normal;
+    color: #df69c3;
 }
 
 .img_block1 {
@@ -58,7 +64,10 @@
     font-weight: bold;
     border-radius: 10px;
     position: relative;
-    margin: 0 auto;
+}
+
+.secone_two {
+    background: #faf8fa;
 }
 
 //決算報告ボタン
@@ -73,5 +82,6 @@
     font-weight: bold;
     border-radius: 10px;
     transition: 0.2s;
+    margin: 0 auto;
 
 }

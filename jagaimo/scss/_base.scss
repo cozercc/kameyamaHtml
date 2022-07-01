@@ -4,11 +4,10 @@
  //  base
  // ---------------------------------------------
  body {
-     font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-     //font-family: "Hiragino Mincho ProN","Hiragino Mincho Pro",游明朝,"Yu Mincho",YuMincho,serif;
-     font-size: 16px;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", YuGothic, "Yu Gothic Medium", Meiryo, sans-serif;
+     font-size: 17px;
      line-height: 1.6;
-     color: #555;
+     color: #281c26;
  }
 
  #wrap {
@@ -116,14 +115,11 @@
 
          li {
              padding: 17px 24px;
-
-             &:hover {
-                 text-decoration: underline;
-             }
          }
 
          a {
              color: inherit;
+             text-decoration: none;
          }
 
      }
@@ -132,6 +128,6 @@
          text-align: center;
          line-height: 1;
          padding: 10px;
-         font-size: 1.1rem;
+         font-size: 12px;
      }
  }
