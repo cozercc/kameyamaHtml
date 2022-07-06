@@ -26,6 +26,7 @@
 
 
  header {
+     box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
      border-bottom: #DF69C3 3px solid;
      width: 100%;
      height: 75px;
@@ -96,6 +97,8 @@
      .footer_title {
          font-weight: bold;
          font-size: 18px;
+         line-height: 1.2;
+         margin-bottom: 10px;
      }
 
      .footer_subtitle {
