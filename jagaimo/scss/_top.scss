@@ -3,16 +3,14 @@
 // ---------------------------------------------
 //  トップ専用
 // ---------------------------------------------
-
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
 
 .top_img {
     text-align: center;
-
-    img {
-        display: block;
-        margin: 0 auto;
-        top: 0;
-    }
 }
 
 .container_main {
@@ -54,10 +52,6 @@
     justify-content: space-between;
 }
 
-.top_statement_block {
-    padding: 60px 0 100px;
-}
-
 .info_block {
     margin-right: 63.55px;
 }
@@ -91,6 +85,7 @@
 
 .top_statement {
     background: #faf8fa;
+    padding: 60px 0 100px;
 }
 
 //決算報告ボタン
