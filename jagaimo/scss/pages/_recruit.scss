@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.eyecatch {
+    background: url("../img/eyecatch.jpg") no-repeat center center;
+    text-align: center;
+    padding: 80px 10px;
+    margin-top: 75px;
+    font-size: 4rem;
+    color: #5a1c4b;
+    background-size: cover;
+}
+
+.recruit_container {
+    width: 800px;
+    margin: auto;
+}
+
+.recruit_info {
+    padding: 60px 0 100px;
+
+    ul {
+        margin-bottom: 10px;
+    }
+}
+
+.recruit_detail {
+    p:not(:last-child) {
+        margin-bottom: 5px;
+    }
+}
+
+.recruit_list {
+    display: grid;
+    
+    width: 800px;
+    // height: 190.97px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, auto);
+    margin-bottom: 50px;
+
+}
+
+.recruit_list_top_item {
+    border-bottom: #FAF8FA 1px solid;
+    background-color: #FBE7F7;
+    padding: 10px 20px;
+}
+
+.recruit_list_item {
+    border-bottom: #FAF8FA 1px solid;
+    padding: 10px 20px;
+}

@@ -46,6 +46,7 @@
      }
  }
 
+
  .gnav_top {
      list-style: none;
      display: flex;
@@ -54,12 +55,12 @@
      li {
          a {
              text-decoration: none;
-             color: inherit;
+             color: #000000;
          }
 
          width: 150px;
 
-         .first_text {
+         .pink {
              color: #DF69C3;
 
          }
@@ -67,7 +68,7 @@
          &:hover {
              color: #DF69C3;
          }
-     }
+        }
 
      a {
          display: flex;
