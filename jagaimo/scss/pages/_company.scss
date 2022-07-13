@@ -1,15 +1,5 @@
 @charset "UTF-8";
 
-.eyecatch {
-    background: url("../img/eyecatch.jpg") no-repeat center center;
-    text-align: center;
-    padding: 80px 10px;
-    margin-top: 75px;
-    font-size: 4rem;
-    color: #5a1c4b;
-    background-size: cover;
-}
-
 .company_info {
     padding: 60px 0 100px;
     display: grid;
@@ -20,7 +10,6 @@
 
 .company_list {
     display: grid;
-    width: 800px;
     height: 288.75px;
     grid-template-columns: 240px 560px;
     grid-row-gap: 1px;
@@ -37,5 +26,9 @@
     text-align: left;
     a {
         text-decoration: underline;
+        color: #000000;
+    }
+    li {
+        list-style: "・" inside;
     }
 }

@@ -24,6 +24,10 @@
      margin: auto;
  }
 
+ .container_sm {
+     width: 800px;
+     margin: auto;
+ }
 
  header {
      box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
@@ -43,6 +47,8 @@
          display: flex;
          flex-wrap: wrap;
          font-size: 18px;
+         text-decoration: none;
+         color: #000000;
      }
  }
 
@@ -68,7 +74,7 @@
          &:hover {
              color: #DF69C3;
          }
-        }
+     }
 
      a {
          display: flex;
@@ -78,16 +84,26 @@
      }
  }
 
- main {
-    margin-top: 75px;
-}
+ .eyecatch {
+     background: url("../img/eyecatch.jpg") no-repeat center center;
+     text-align: center;
+     padding: 80px 10px;
+     margin-top: 75px;
+     font-size: 4rem;
+     color: #5a1c4b;
+     background-size: cover;
+ }
 
-.gototop {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: 110px;
-}
+ main {
+     margin-top: 75px;
+ }
+
+ .gototop {
+     position: fixed;
+     bottom: 10px;
+     right: 10px;
+     width: 110px;
+ }
 
  footer {
      background-color: #FBE7F7;
@@ -95,47 +111,47 @@
  }
 
  .footer_info {
-    text-align: center;
-}
+     text-align: center;
+ }
 
-.footer_base {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+ .footer_base {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
 
-.footer_title {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 1.2;
-    margin-bottom: 10px;
-}
+ .footer_title {
+     font-weight: bold;
+     font-size: 18px;
+     line-height: 1.2;
+     margin-bottom: 10px;
+ }
 
-.footer_subtitle {
-    font-size: 12px;
-    display: block;
-}
+ .footer_subtitle {
+     font-size: 12px;
+     display: block;
+ }
 
-.footer_address {
-    font-size: 14px;
-}
+ .footer_address {
+     font-size: 14px;
+ }
 
-.nav_footer {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
+ .nav_footer {
+     display: flex;
+     align-items: center;
+     font-size: 14px;
 
-    a {
-        color: inherit;
-        display: block;
-        padding: 5px 10px;
-    }
+     a {
+         color: inherit;
+         display: block;
+         padding: 5px 10px;
+     }
 
-}
+ }
 
-.copyright {
-    text-align: center;
-    line-height: 1;
-    padding: 10px;
-    font-size: 12px;
-}
+ .copyright {
+     text-align: center;
+     line-height: 1;
+     padding: 10px;
+     font-size: 12px;
+ }
