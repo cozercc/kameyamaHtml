@@ -2,10 +2,6 @@
 
 .company_info {
     padding: 60px 0 100px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-
 }
 
 .company_list {
@@ -23,7 +19,6 @@
 
 .company_list_right_item {
     padding: 10px 20px;
-    text-align: left;
     a {
         text-decoration: underline;
         color: #000000;
