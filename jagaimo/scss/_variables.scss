@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+// font
+$font-serif: "YuMincho",
+"Yu Mincho",
+"Hiragino Mincho ProN",
+"MS PMincho",
+"Times New Roman",
+serif;
+
+// breakpoint
+$max-breakpoints: (
+  /*'sm': 640px,*/
+  "tb": 767px,
+  /*'pc': 960px*/
+);
+$min-breakpoints: (
+  /*'tb': 641px,*/
+  "pc": 768px);
+
+// responsive
+@mixin max-mq($breakpoint: tb) {
+
+  //767px以下
+  @media (max-width: #{map-get($max-breakpoints, $breakpoint)}) {
+    @content;
+  }
+}
+
+@mixin min-mq($breakpoint: pc) {
+
+  //768px以上
+  @media (min-width: #{map-get($min-breakpoints, $breakpoint)}) {
+    @content;
+  }
+}
+
+@include min-mq() {
+
+  //768px以上
+  .is-hidden_pc {
+    display: none;
+  }
+}
+
+@include max-mq() {
+
+  //767px以下
+  .is-hidden_sp {
+    display: none;
+  }
+}
