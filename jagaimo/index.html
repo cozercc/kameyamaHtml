@@ -10,12 +10,14 @@
     <meta content="じゃがいもチョウムライ練習課題" name="description">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/top.js"></script>
 </head>
 
 <body>
     <div id="wrap">
         <header>
-            <h1>
+            <h1 class="logo">
                 <a class="title_text" href="/index.html">
                     <img src="img/mark.png" alt="jagaimo">
                     <span>
@@ -24,6 +26,12 @@
                     </span>
                 </a>
             </h1>
+            <button class="top_list_mobi">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line-menu">menu</span>
+            </button>
             <nav class="top_list">
                 <ul class="gnav_top">
                     <li><a href="./index.html" class="pink">TOP</a></li>
@@ -47,7 +55,7 @@
                         <span>About us</span>
                     </h2>
                     <div class="img_block1">
-                        <div>
+                        <div class="block_img">
                             <img src="img/img_01.jpg" alt="">
                         </div>
                         <div class="info_block">
@@ -63,7 +71,7 @@
                         <h2 class="top_ttl">決算報告
                             <span>Statement</span>
                         </h2>
-                        <a href="#" class="btn_infobase btn_kessan">決算報告書を見る</a>
+                        <a href="#" class="btn_infobase btn_kessan container_sm">決算報告書を見る</a>
                 </div>
             </section>
     </main>

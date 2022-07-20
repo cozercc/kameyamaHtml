@@ -48,12 +48,23 @@ img {
 }
 
 .img_block1 {
+
+    @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+
+    }
+    .block_img {
+        @media (max-width: 768px) {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .info_block {
+    @media (min-width: 768px) {
     margin-right: 63.55px;
+    }
 }
 
 // 会社案内
@@ -101,5 +112,5 @@ img {
     border-radius: 10px;
     transition: 0.2s;
     margin: 0 auto;
-
+    
 }
