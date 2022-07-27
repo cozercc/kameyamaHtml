@@ -49,20 +49,20 @@ img {
 
 .img_block1 {
 
-    @media (min-width: 768px) {
+    @include min-mq() {
     display: flex;
     justify-content: space-between;
 
     }
     .block_img {
-        @media (max-width: 768px) {
+        @include max-mq() {
             margin-bottom: 20px;
         }
     }
 }
 
 .info_block {
-    @media (min-width: 768px) {
+    @include min-mq() {
     margin-right: 63.55px;
     }
 }

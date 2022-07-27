@@ -60,7 +60,7 @@
      align-items: center;
      justify-content: center;
      z-index: 1;
-     @media (min-width: 767px) {
+     @include min-mq() {
         height: 75px;
      }
      @include max-mq() {
@@ -148,7 +148,7 @@
      a {
          display: flex;
          padding: 13px;
-         @media (min-width: 767px) {
+         @include min-mq() {
             justify-content: center;
             align-items: center;
          }
