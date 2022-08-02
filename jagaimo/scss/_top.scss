@@ -88,6 +88,11 @@ img {
     box-shadow: 1px 1px 3px rgb(0 0 0 / 20%);
     transition: 0.2s;
 
+    @include max-mq() {
+        max-width: 776px;
+        padding: 20px 10px;
+    }
+
     &:hover {
         background-color: #df69c3;
         color: #fff;

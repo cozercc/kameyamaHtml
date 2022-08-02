@@ -13,6 +13,7 @@
      font-size: 16px;
      line-height: 1.6;
      color: #281c26;
+
      @include max-mq() {
          font-size: 1.5em;
          padding-top: 65px;
@@ -22,29 +23,32 @@
  #wrap {
      min-width: 1200px;
      margin: auto;
-    @include max-mq() {
-        width: 100%;
-        min-width: initial;
-    }
+
+     @include max-mq() {
+         width: 100%;
+         min-width: initial;
+     }
  }
 
  .container {
      width: 1000px;
      margin: auto;
+
      @include max-mq() {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 0px 10px; 
+         width: 100%;
+         box-sizing: border-box;
+         padding: 0px 10px;
      }
  }
 
  .container_sm {
      width: 800px;
      margin: auto;
+
      @include max-mq() {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 0px 10px; 
+         width: 100%;
+         box-sizing: border-box;
+         padding: 0px 10px;
      }
  }
 
@@ -60,18 +64,21 @@
      align-items: center;
      justify-content: center;
      z-index: 1;
+
      @include min-mq() {
-        height: 75px;
+         height: 75px;
      }
+
      @include max-mq() {
          display: block;
      }
 
+
      .logo {
-        @include max-mq() {
-            padding: 10px 0;
-            margin: 0;
-        }
+         @include max-mq() {
+             padding: 10px 0;
+             margin: 0;
+         }
      }
 
      .title_text {
@@ -84,75 +91,74 @@
      }
 
      .top_list_mobi {
-        display: none;
-        line-height: 1;
-        color: #DF69C3;
-        .line {
-            display: block;
-            width: 80%;
-            background-color: #DF69C3;
-            height: 4px;
-            margin: 5px auto 0;
-        }
-        .line-menu {
-            font-weight: normal;
-        }
-        @include max-mq() {
-                display: block;
-                position: absolute;
-                top: 10px;
-                right: 10px;
-                background: #fff;
-                border: none;
-                width: 44px;
-                height: 44px;
-                cursor: pointer;
-        }
+         display: none;
+         line-height: 1;
+         color: #DF69C3;
+
+         .line {
+             display: block;
+             width: 80%;
+             background-color: #DF69C3;
+             height: 4px;
+             margin: 5px auto 0;
+         }
+
+         .line-menu {
+             font-weight: normal;
+         }
+
+         @include max-mq() {
+             display: block;
+             position: absolute;
+             top: 10px;
+             right: 10px;
+             background: #fff;
+             border: none;
+             width: 44px;
+             height: 44px;
+             cursor: pointer;
+         }
      }
  }
 
-.top_list {
-    @include max-mq() {
-        display: none;
-        width: 100%;
-        padding: 0;
-    }
-}
+ .top_list {
+     @include max-mq() {
+         display: none;
+         width: 100%;
+         padding: 0;
+     }
+ }
 
  .gnav_top {
      list-style: none;
      display: flex;
      justify-content: center;
+
      @include max-mq() {
          display: block;
      }
 
      li {
-         a {
-             text-decoration: none;
-             color: #000000;
-         }
-
          width: 150px;
 
          .pink {
              color: #DF69C3;
 
          }
-
-         &:hover {
-             color: #DF69C3;
-         }
      }
-
+     
      a {
-         display: flex;
-         padding: 13px;
-         @include min-mq() {
-            justify-content: center;
-            align-items: center;
-         }
-     }
+        text-decoration: none;
+        color: #000000; 
+        display: block;
+        padding: 13px;
+
+        &:hover {
+           color: #DF69C3;
+           transition: 0.2s;
+       }
+
+    }
  }
 
  .eyecatch {
@@ -167,6 +173,7 @@
 
  main {
      margin-top: 75px;
+
      @include max-mq() {
          margin-top: 0px;
      }
@@ -177,6 +184,7 @@
      bottom: 10px;
      right: 10px;
      width: 110px;
+
      @include max-mq() {
          width: 80px;
      }
@@ -195,6 +203,7 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
+
      @include max-mq() {
          flex-direction: column-reverse;
          margin-bottom: 20px;
@@ -218,9 +227,9 @@
  }
 
  .footer_list {
-    @include max-mq(){
-        margin-bottom: 20px;
-    }
+     @include max-mq() {
+         margin-bottom: 20px;
+     }
  }
 
  .nav_footer {
@@ -233,9 +242,10 @@
          display: block;
          padding: 5px 10px;
      }
+
      @include max-mq() {
-        flex-wrap: wrap;
-        justify-content: center;
+         flex-wrap: wrap;
+         justify-content: center;
      }
 
  }
