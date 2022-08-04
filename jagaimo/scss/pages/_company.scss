@@ -1,6 +1,12 @@
 @charset "UTF-8";
 @use "../variables"as *;
 
+.eyecatch {
+    @include max-mq() {
+        margin-top: 0;
+    }
+}
+
 .company_info {
     padding: 60px 0 100px;
 }
@@ -10,6 +16,12 @@
     height: 288.75px;
     grid-template-columns: 240px 560px;
     grid-row-gap: 1px;
+    @include max-mq() {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 0px;
+        height: auto;
+    }
 }
 
 .company_list_left_item {

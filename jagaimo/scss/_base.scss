@@ -169,6 +169,11 @@
      font-size: 4rem;
      color: #5a1c4b;
      background-size: cover;
+
+     @include max-mq() {
+         padding: 40px 0;;
+         font-size: 3rem;
+     }
  }
 
  main {

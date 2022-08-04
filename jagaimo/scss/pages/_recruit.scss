@@ -15,11 +15,27 @@
     }
 }
 
+.info_occupation {
+    //undisplay this text
+    display: none;
+    @include max-mq() {
+        display: block;
+        font-size: 10px;
+        color: #999;
+    }
+}
+
 .recruit_list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, auto);
     margin-bottom: 50px;
+    @include max-mq() {
+        overflow-x: scroll;
+        white-space: nowrap;
+        font-size: 1.25rem;
+        grid-template-columns: repeat(5, 125px);
+    }
 
 }
 
@@ -37,3 +53,11 @@
 .recruit_btn {
     margin: 50px auto;
 }
+
+.btn_infobase {
+    @include max-mq() {
+        padding: 10px 10px;
+        max-width: 300px;
+    }
+}
+
