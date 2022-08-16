@@ -48,6 +48,9 @@
 .recruit_list_item {
     border-bottom: #FAF8FA 1px solid;
     padding: 10px 20px;
+    @include max-mq() {
+        white-space: normal;
+    }
 }
 
 .recruit_btn {
