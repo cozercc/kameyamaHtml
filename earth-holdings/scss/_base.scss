@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+@use "variables" as *;
+
+// ---------------------------------------------
+//  base
+// ---------------------------------------------
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "YuGothic",
+    "Yu Gothic Medium", "Meiryo", sans-serif;
+  font-size: var( --fz16 );
+  line-height: 1.6;
+  color: $color-body;
+}
+
+// html,body 以外の個所ではfont-sizeは下記の用にremで指定
+// 14px = 1.4rem
+// 15px = 1.5rem
+// 16px = 1.6rem
+// 17px = 1.7rem
+
+.wrap {
+  // min-width: 1200px;
+  margin: auto;
+
+  @include max-mq {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+.container {
+  box-sizing: border-box;
+  width: min( 1020px, 100% );
+  padding: 0 10px;
+  margin: auto;
+}
+
+main {
+  display: block;
+
+  // for ipad portrait mode
+
+  @media (min-width: 768px) and (max-width: 769px) and (orientation: portrait) {
+    min-height: 95vh;
+  }
+}
+
+.totop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  display: none;
+  cursor: pointer;
+
+  @include max-mq {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+// ---------------------------------------------
+//  ヘッダー関連 header
+// ---------------------------------------------
+
+// ---------------------------------------------
+//  グローバルナビゲーション関連 gnav
+// ---------------------------------------------
+
+.gnav_btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+  display: block;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  background: $color-primary;
+  border: solid 2px #fff;
+
+  span {
+    position: absolute;
+    left: 15%;
+    display: block;
+    width: 70%;
+    height: 3px;
+    background: #fff;
+    transition: 0.3s;
+
+    &:first-child {
+      top: 23%;
+    }
+
+    &:nth-child(2) {
+      top: 48%;
+      opacity: 1;
+    }
+
+    &:last-child {
+      top: 72%;
+    }
+  }
+
+  &.is-open {
+    span {
+      transition: 0.2s;
+
+      &:first-child {
+        top: 48%;
+        transform: rotate( 45deg );
+      }
+
+      &:nth-child(2) {
+        display: none;
+        opacity: 0;
+      }
+
+      &:last-child {
+        top: 48%;
+        transform: rotate( -45deg );
+      }
+    }
+  }
+
+  @include min-mq {
+    display: none; // PC時非表示
+  }
+}
+
+.gnav {
+  display: block;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  a {
+    display: block;
+    padding: 15px 0;
+  }
+
+  @include max-mq {
+    display: none;
+
+    ul {
+      display: block;
+    }
+
+    a {
+      display: block;
+    }
+  }
+}
+
+// ---------------------------------------------
+//  フッター関連 footer
+// ---------------------------------------------
+
+.footer {
+  // footer--copy
+  &--copy {
+    padding: 10px;
+    line-height: 1;
+    text-align: center;
+  }
+}
